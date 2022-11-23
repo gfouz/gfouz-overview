@@ -25,6 +25,7 @@ Being a part of the JavaScript language, using React spawns lots of advantages. 
 But let’s take a closer, more informed look at some particular reasons why use React and, more importantly, when to use React.js to tackle the most fitting goals and achieve outstanding results.
 
 ## Mature, simple-to-grasp dev workflow
+
 One of the major reasons to use React.js for web development is the library’s ultimately optimized development interface and coding language. Thus, lightweight React’s API is reinforced with fast performance capacities to achieve a hassle-free, rapid development workflow. React components and concepts are really simple to figure out so there is not much learning curve here.
 
 As opposed to other popular frameworks, like Vue and Angular, there is no barrage of extra HTML attributes (created when JavaScript is “crammed” into HTML - a standard practice for traditional frameworks and JS library solutions). In the long run, by putting JSX into JavaScript (literally going the other way round), React grants a much cleaner, better readable, more comprehensive code.

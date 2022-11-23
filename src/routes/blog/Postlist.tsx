@@ -9,7 +9,7 @@ function PostList() {
     <>
       <PostCardsContainer>
         {postlist.length &&
-          postlist.map((post, i) => {
+          postlist.map((post) => {
             return (
               <Card key={post.id} className='card'>
                 <CardImage>
@@ -114,4 +114,3 @@ const FurtherInfo = styled.div`
     color: blue;
   }
 `;
-

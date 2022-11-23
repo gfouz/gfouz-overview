@@ -22,11 +22,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  
-  --color-1: #79cd39;
-  --color-2:  #0b514c;
-  --angle: 0deg;
 
+  --color-1: #79cd39;
+  --color-2: #0b514c;
+  --angle: 0deg;
 }
 
 @font-face {

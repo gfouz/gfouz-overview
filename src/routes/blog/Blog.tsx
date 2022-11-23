@@ -19,9 +19,9 @@ function Blog() {
           <PostListContainer>
             <Postlist />
           </PostListContainer>
-        <Paragraph center p='2em' bolder >
-         En ciertos momentos, la única forma de tener razón es perdiéndola. J.Bergamín
-        </Paragraph>
+          <Paragraph center p='2em' bolder>
+            En ciertos momentos, la única forma de tener razón es perdiéndola. J.Bergamín
+          </Paragraph>
         </BlogContainer>
       </Layout>
     </>
@@ -34,7 +34,6 @@ const BlogContainer = styled(ColumnArranged)`
   --blue-grey: #121a3e;
   --vscode: #19202e;
   height: 100%;
-
 `;
 const Main = styled(ColumnArranged)`
   img {
@@ -43,15 +42,6 @@ const Main = styled(ColumnArranged)`
     margin: 2em 0;
   }
 `;
-const Title = styled.h1`
-  text-transform: uppercase;
-  font-size: 2.5em;
-  color: #444444;
-  margin: 1em 0;
-  font-weight: bolder;
-`;
-const Span = styled.span`
-  color: #8628b8;
-`;
+
 const PostListContainer = styled(RowArranged)``;
 const Paragraph = styled(Headline)``;

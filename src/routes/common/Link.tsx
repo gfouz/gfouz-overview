@@ -14,10 +14,10 @@ interface ILink {
 const WebLink = ({ href, color, font, tip, size, uppercase, children }: ILink) => {
   const css = {
     textDecoration: 'none',
-    color: color ,
+    color: color,
     fontWeight: font,
     fontSize: size,
-    textTransform: uppercase ? 'uppercase' : 'normal'
+    textTransform: uppercase ? 'uppercase' : 'normal',
   };
 
   return (

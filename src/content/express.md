@@ -27,7 +27,6 @@ When creating a Node.js web application, we write a single JavaScript applicatio
 A request handler is a JavaScript function which takes a request and sends an appropriate response.
 Node.js APIs can get complex and writing how to handle a single request can end up being over many lines of code. Express makes it easier to write Node.js web applications.
 
-
 ## Advantages of using Express with Node.js
 
 Express lets you take away a lot of the complexities of Node.js while adding helpful functions to a Node.js HTTP server.
@@ -37,7 +36,7 @@ We can integrate with a template rendering engine (also called a view rendering 
 A template engine enables you to use static template files and at runtime change the values of variables in those files.
 You can set up “middleware” for request processing.
 
-## What is a Middleware? 
+## What is a Middleware?
 
 Middleware is a set of functions that sit between a raw request and the final intended route. Middleware functions have access to all the HTTP requests coming to the server. Middleware can handle tasks such as logging, sending static files, authorization, and session management, etc.
 
@@ -48,4 +47,3 @@ Express will start at the first function in the stack and execute in order down 
 Every function in the stack takes three arguments request, response and next. next is a function, that when called Express executes the next function in the stack. This is a subtle difference between middleware and a route handler which we saw above.
 
 Let’s look at a basic static file server to understand middleware. Initialize a new npm project. Then create a directory named static and copy-paste any available static files into the folder (text, images, etc.).
-

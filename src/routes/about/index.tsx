@@ -10,7 +10,7 @@ import HtmlIcon from '../icons/Html';
 import CssIcon from '../icons/Css';
 import ReactIcon from '../icons/ReactIcon';
 import { first_text, second_text, third_text, fourth_text } from './text';
-import { RowArranged, ColumnArranged } from '../common/Containers';
+import { RowArranged } from '../common/Containers';
 
 function About() {
   return (
@@ -40,7 +40,7 @@ function About() {
             </Paragraph>
           </ParagraphSection>
           <SecondaryArticle>
-             <img  src='./images/piece.jpg' alt='pc' />
+            <img src='./images/piece.jpg' alt='pc' />
           </SecondaryArticle>
           <ParagraphSection>
             <Paragraph>
@@ -61,10 +61,10 @@ function About() {
           <TertiaryArticle>
             <TertiaryHealine upper bolder center p='2em' spacing='5px'>
               Imagination & inspiration
-           </TertiaryHealine>    
+            </TertiaryHealine>
             <img className='secondary__image' src='./images/spider.jpg' />
-          </TertiaryArticle>  
-          
+          </TertiaryArticle>
+
           <TechnologySection>
             <HtmlIcon />
             <CssIcon />
@@ -86,7 +86,6 @@ const AboutContainer = styled.div`
     max-width: 100%;
     height: auto;
   }
-  
 `;
 const ParagraphSection = styled.div`
   display: flex;
@@ -106,19 +105,19 @@ const PrimaryArticle = styled(RowArranged)`
   justify-content: flex-start;
 `;
 const SecondaryArticle = styled(RowArranged)`
- flex-wrap: wrap;
- justify-content: center;
- background-color: #f5f5f5;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f5f5f5;
 `;
 const TertiaryArticle = styled(RowArranged)`
- flex-wrap: wrap;
- justify-content: center;
- background-color: #fbfbfb;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fbfbfb;
 `;
 const TertiaryHealine = styled(Headline)`
-text-shadow: 1px 1px 10px #222222;
+  text-shadow: 1px 1px 10px #222222;
 `;
 const TechnologySection = styled(RowArranged)`
- padding: 6em 0;
- background-color: #fbfbfb;
+  padding: 6em 0;
+  background-color: #fbfbfb;
 `;

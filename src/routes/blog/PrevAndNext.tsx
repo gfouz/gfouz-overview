@@ -1,17 +1,22 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
-import { useParams } from 'react-router';
+import { useParams } from 'react-router-dom';
 import AngleRight from '../icons/AngleRight';
 import AngleLeft from '../icons/AngleLeft';
 import { RowArranged } from '../common/Containers';
+import { IPost } from './constants';
 
-const PreviousNext = (props) => {
+interface IProps {
+  posts: IPost[];
+}
+const PreviousNext = (props: IProps) => {
   const { posts } = props;
-  const params = useParams();
+  const { id } = useParams();
   const navigate = useNavigate();
-  const currentId = parseInt(params?.id);
-  const postId = posts && posts.map((post) => post.id);
+  const posibleUndefined = id !== undefined ? id : '';
+  const currentId = parseInt(posibleUndefined);
+  const postId = posts && posts.map((post: IPost) => post.id);
   const initialState = postId && postId.indexOf(currentId);
   const [active, setActive] = React.useState(true);
   const [index, setIndex] = React.useState(initialState);
@@ -56,8 +61,8 @@ const Button = styled.button`
   color: #ff9800;
 `;
 const Previous = styled(Button)`
- margin-right: 4em;
+  margin-right: 4em;
 `;
 const Next = styled(Button)`
- margin-left: 4em;
+  margin-left: 4em;
 `;
