@@ -7,9 +7,9 @@ import SpyGlass from '../icons/SpyGlass';
 import { Routes } from '../layout/Routes';
 import WebLink from '../common/Link';
 import { project, attached } from './constants';
-import { RowArranged, Relative } from '../common/Containers';
+import { RowArranged } from '../common/Containers';
 
-const tip = 'You may see my source code on Github!';
+//const tip = 'You may see my source code on Github!';
 const tip2 = 'Here i show some technologies i currently use each day';
 
 function Work() {
@@ -87,11 +87,6 @@ const movement = keyframes`
 `;
 const Title = styled(Headline)`
   animation: ${movement} 5s;
-`;
-const WorkList = styled.div`
-  position: relative;
-  margin: 1em 0;
-  border-radius: 5px;
 `;
 const Line = styled.div`
   width: 100%;

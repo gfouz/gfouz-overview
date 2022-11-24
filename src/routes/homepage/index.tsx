@@ -1,5 +1,5 @@
 import * as React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import Layout from '../layout/Layout';
 import SpyGlass from './SpyGlass';
 import { Headline } from '../common/Headline';

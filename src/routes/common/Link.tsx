@@ -1,32 +1,31 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import Suggestions from './Suggestion';
 
-interface ILink {
+interface IAnchor {
   tip?: string;
   size?: string;
   href: string;
   font?: string;
   color?: string;
-  uppercase?: string;
+  uppercase?: boolean;
   children: React.ReactNode;
 }
 
-const WebLink = ({ href, color, font, tip, size, uppercase, children }: ILink) => {
-  const css = {
-    textDecoration: 'none',
-    color: color,
-    fontWeight: font,
-    fontSize: size,
-    textTransform: uppercase ? 'uppercase' : 'normal',
-  };
-
+const WebLink = (props: IAnchor) => {
   return (
-    <Suggestions tip={tip}>
-      <a href={href} style={css}>
-        {children}
-      </a>
+    <Suggestions tip={props.tip}>
+      <Anchor {...props}>{props.children}</Anchor>
     </Suggestions>
   );
 };
 
 export default WebLink;
+
+const Anchor = styled.a<IAnchor>`
+  color: ${(props) => props.color};
+  font-size: ${(props) => props.size};
+  font-weight: ${(props) => props.font};
+  text-decoration: none;
+  text-transform: ${(props) => (props.uppercase ? 'uppercase' : 'normal')};
+`;

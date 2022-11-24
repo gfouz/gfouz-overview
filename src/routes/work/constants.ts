@@ -1,4 +1,5 @@
 interface IProps {
+  card: string;
   name: string;
   path: string;
 }
