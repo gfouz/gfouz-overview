@@ -1,4 +1,4 @@
-import{s as e}from"./index.5b911934.js";const n=e.div`
+import{s as e}from"./index.cf61390d.js";const n=e.div`
   border-radius: 5px;
   font-weight: bolder;
   padding: 3px 10px;
