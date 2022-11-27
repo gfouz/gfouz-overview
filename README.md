@@ -89,3 +89,6 @@ npm install --save @types/react-syntax-highlighter
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/guide/en/#outputmanualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+
+git config --global user.email gfouz1975@gmail.com
+git config --global user.name gfouz
