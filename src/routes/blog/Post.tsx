@@ -1,3 +1,4 @@
+//@ts-nocheck
 import * as React from 'react';
 import styled from 'styled-components';
 import { useParams, useNavigate } from 'react-router-dom';
@@ -5,6 +6,9 @@ import ReactMarkdown from 'react-markdown';
 import PreviousNext from './PrevAndNext';
 import posts from './posts.json';
 import { IPost } from './constants';
+import {Prism as SyntaxHighlighter} from 'react-syntax-highlighter'
+import { dracula } from 'react-syntax-highlighter/dist/esm/styles/prism'
+
 
 const Post = () => {
   const [list, setList] = React.useState<IPost[]>([]);
@@ -18,15 +22,33 @@ const Post = () => {
   React.useEffect(() => {
     const postlist: IPost[] = posts.map((post: IPost) => post);
     setList(postlist);
-  });
+  }, [post]);
 
   return (
     <>
       <PostContainer>
-        <ReactMarkdown>
-          {/* the exclamation mark is the non-null assertion operator. It removes 'undefined' and 'null' */}
-          {post!.content}
-        </ReactMarkdown>
+        <ReactMarkdown
+          children={post && post!.content}
+          components={{
+            code({ node, inline, className, children, ...props }) {
+              const match = /language-(\w+)/.exec(className || '');
+              return !inline && match ? (
+                <SyntaxHighlighter
+                  children={String(children).replace(/\n$/, '')}
+                  style={dracula}
+                  language={match[1]}
+                  PreTag='div'
+                  {...props}
+                />
+              ) : (
+                <code className={className} {...props}>
+                  {children}
+                </code>
+              );
+            },
+          }}
+        />
+        ,
         <PreviousNextContainer>
           <PreviousNext posts={posts} />
         </PreviousNextContainer>
@@ -60,3 +82,4 @@ const PreviousNextContainer = styled.div`
   left: 0;
   bottom: 2em;
 `;
+

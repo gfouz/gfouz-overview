@@ -8,7 +8,7 @@ date: November 20, 2022
 
 # How to be a better programmer.
 
-![react wallpaper](/images/advices.jpg)
+![react wallpaper](./images/advices.jpg)
 
 ## Get good at Googling.
 

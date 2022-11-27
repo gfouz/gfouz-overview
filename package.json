@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "homepage": "https://gfouz.github.io/gfouz-overview",
   "scripts": {
-    "write":"node public/jsongenerate.js",
+    "write": "node public/jsongenerate.js",
     "dev": "vite",
     "build": "tsc && vite build",
     "predeploy": "npm run build",
@@ -55,5 +55,16 @@
     "typescript": "^4.6.3",
     "vite": "^2.9.9",
     "vite-tsconfig-paths": "^3.5.0"
+  },
+  "description": "<h1 align='center'>Vite + React + TypeScript + Eslint + Prettier Template ⚡</h1>",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfouz/gfouz-overview.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gfouz/gfouz-overview/issues"
   }
 }

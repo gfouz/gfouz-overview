@@ -3,12 +3,12 @@ title: An awesome framework for Node.
 author: Giovani Fouz Jiménez
 description: Introduction to express...
 img: node.jpg
-date: November 22, 2022
+date: December 1, 2022
 ---
 
 # Wonderful ExpressJs!
 
-![node wallpaper](/images/node.jpg)
+![node wallpaper](./images/node.jpg)
 
 ## What is Node.Js ?
 

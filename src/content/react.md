@@ -8,7 +8,7 @@ date: November 23, 2022
 
 # The front-end king upto now!
 
-![react wallpaper](/images/react.jpg)
+![react wallpaper](./images/react.jpg)
 
 ## What is React ?
 

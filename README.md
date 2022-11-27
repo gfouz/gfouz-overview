@@ -2,6 +2,8 @@
 
 https://github.com/gfouz/gfouz-overview
 
+## deployment path: https://gfouz.github.io/gfouz-overview/
+
 Create a new project with Vite, React JS, TypeScript, Eslint, Prettier in just 1 second and you don't need to setup anything.
 
 #### **Vercel Deploy: https://vite-react-ts-eslint-prettier.vercel.app**
@@ -80,4 +82,10 @@ yarn prettier:fix
 
 ```
 yarn format
+npm install --save @types/react-syntax-highlighter
 ```
+
+(!) Some chunks are larger than 500 KiB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/guide/en/#outputmanualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

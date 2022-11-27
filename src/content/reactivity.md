@@ -8,7 +8,7 @@ date: febraury 5, 2022
 
 ## we’re going to look at reactivity in Vue.
 
-![react wallpaper](/images/coffee.jpg)
+![react wallpaper](./images/coffee.jpg)
 
 ## The non-reactive nature of JavaScript.
 
